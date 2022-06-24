@@ -7,7 +7,16 @@ Colorful Company's ESLint [shareable config](https://eslint.org/docs/developer-g
 ## Install
 
 ```
-yarn add -D eslint https://github.com/colorfulcompany/eslint-config-colorfulcompany eslint-config-standard eslint-plugin-import eslint-plugin-jsdoc eslint-plugin-node eslint-plugin-promise
+yarn add -D \
+  typescript \
+  eslint \
+  https://github.com/colorfulcompany/eslint-config-colorfulcompany \
+  @typescript-eslint/eslint-plugin \
+  eslint-config-standard-with-typescript \
+  eslint-plugin-import \
+  eslint-plugin-jsdoc \
+  eslint-plugin-node \
+  eslint-plugin-promise
 ```
 
 ## Config variants
@@ -28,7 +37,7 @@ module.exports = {
 ```
 
 ## Rules
-- Extends [`standard`](https://standardjs.com/)
+- Extends [`standard-with-typescript`](https://github.com/standard/eslint-config-standard-with-typescript)
 - Extends [`plugin:jsdoc/recommended`](https://github.com/gajus/eslint-plugin-jsdoc)
 - No console on production.
 - No debugger on production.
@@ -101,7 +110,7 @@ This way is a bit redundant.
 
 ## Direct dependencies
 
-- [eslint\-config\-standard \- npm](https://www.npmjs.com/package/eslint-config-standard)
+- [eslint-config-standard-with-typescript - npm](https://www.npmjs.com/package/eslint-config-standard-with-typescript)
 - [eslint\-plugin\-jsdoc \- npm](https://www.npmjs.com/package/eslint-plugin-jsdoc)
 - [eslint\-plugin\-import \- npm](https://www.npmjs.com/package/eslint-plugin-import)
 

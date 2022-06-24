@@ -7,7 +7,16 @@ Colorful Company's ESLint [shareable config](https://eslint.org/docs/developer-g
 ## インストール
 
 ```
-yarn add -D eslint https://github.com/colorfulcompany/eslint-config-colorfulcompany eslint-config-standard eslint-plugin-import eslint-plugin-jsdoc eslint-plugin-node eslint-plugin-promise
+yarn add -D \
+  typescript \
+  eslint \
+  https://github.com/colorfulcompany/eslint-config-colorfulcompany \
+  @typescript-eslint/eslint-plugin \
+  eslint-config-standard-with-typescript \
+  eslint-plugin-import \
+  eslint-plugin-jsdoc \
+  eslint-plugin-node \
+  eslint-plugin-promise
 ```
 
 ## 設定の種類
@@ -28,7 +37,7 @@ module.exports = {
 ```
 
 ## ルール
-- Extends [`standard`](https://standardjs.com/)
+- Extends [`standard-with-typescript`](https://github.com/standard/eslint-config-standard-with-typescript)
 - Extends [`plugin:jsdoc/recommended`](https://github.com/gajus/eslint-plugin-jsdoc)
 - No console on production.
 - No debugger on production.
@@ -100,7 +109,7 @@ module.exports = {
 
 ## 直接的な依存
 
-- [eslint\-config\-standard \- npm](https://www.npmjs.com/package/eslint-config-standard)
+- [eslint-config-standard-with-typescript - npm](https://www.npmjs.com/package/eslint-config-standard-with-typescript)
 - [eslint\-plugin\-jsdoc \- npm](https://www.npmjs.com/package/eslint-plugin-jsdoc)
 - [eslint\-plugin\-import \- npm](https://www.npmjs.com/package/eslint-plugin-import)
 
